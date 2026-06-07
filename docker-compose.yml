@@ -1,0 +1,17 @@
+services:
+  runelite:
+    image: ghcr.io/ccatss/docker-runelite
+    container_name: runelite
+    shm_size: '2gb'
+    ports:
+      - 3000:3000 # HTTPS Web UI
+      - 3001:3001 # HTTP Web UI
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+      - PIXELFLUX_WAYLAND=true
+      - AUTO_GPU=true
+    volumes:
+      - ./config:/config
+    restart: unless-stopped

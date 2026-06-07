@@ -1,0 +1,21 @@
+<?xml id="menu" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+    <menu id="root-menu" label="Openbox Root Menu">
+        <item label="Launch RuneLite">
+            <action name="Execute">
+                <command>java -jar /opt/runelite/RuneLite.jar --mode=OFF</command>
+            </action>
+        </item>
+
+        <separator />
+
+        <item label="Open Terminal Shell">
+            <action name="Execute">
+                <command>st</command>
+            </action>
+        </item>
+        <item label="Exit/Restart Session">
+            <action name="Exit" />
+        </item>
+    </menu>
+</openbox_menu>
