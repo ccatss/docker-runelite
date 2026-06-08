@@ -11,8 +11,7 @@ This project is built on top of `linuxserver/docker-baseimage-selkies` (Alpine v
 * **Browser-based Access:** Stream RuneLite directly to any modern browser.
 * **Persistent Configuration:** Keep your RuneLite settings, cache, and profiles safe across container restarts.
 * **Audio Support:** Full audio streaming out of the box through Selkies.
-
-Coming Soon: Jagex Launcher support (requires custom launcher as both Bolt and Jagex Launcher refuse to work inside Docker)
+* **Jagex Accounts:** Support for Jagex Accounts via [ccatss/goat-launcher](https://github.com/ccatss/goat-launcher) (see environment config for default launch options)
 
 ## Prerequisites
 
@@ -86,12 +85,13 @@ If you configured a `PASSWORD`, use `abc` as the username and your specified pas
 
 See [linuxserver/docker-baseimage-selkies](https://github.com/linuxserver/docker-baseimage-selkies) for full options.
 
-| Variable   | Description                                                  | Default |
-|:-----------|:-------------------------------------------------------------| :--- |
-| `PUID`     | User ID for file permissions on the host system              | `1000` |
-| `PGID`     | Group ID for file permissions on the host system             | `1000` |
-| `TZ`       | Container timezone (e.g., `Europe/London`)                   | `Etc/UTC` |
-| `PASSWORD` | Optional password protecting the web interface (User: `abc`) | None |
+| Variable             | Description                                                                    | Default |
+|:---------------------|:-------------------------------------------------------------------------------| :--- |
+| `PUID`               | User ID for file permissions on the host system                                | `1000` |
+| `PGID`               | Group ID for file permissions on the host system                               | `1000` |
+| `TZ`                 | Container timezone (e.g., `Europe/London`)                                     | `Etc/UTC` |
+| `PASSWORD`           | Optional password protecting the web interface (User: `abc`)                   | None |
+| `USE_JAGEX_LAUNCHER` | Use a Jagex Account Compatible launcher instead of launching RuneLite directly | None |
 
 ## Volumes
 

@@ -1,0 +1,12 @@
+{
+  "policies": {
+    "Handlers": {
+      "schemes": {
+        "jagex": {
+          "action": "useSystemDefault",
+          "ask": false
+        }
+      }
+    }
+  }
+}

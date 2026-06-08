@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=GoAT Launcher
+Comment=Third-Party Jagex Launcher Client
+Exec=/opt/goat-launcher/goat-launcher login %u
+Icon=goat-launcher
+Terminal=false
+Type=Application
+Categories=Game;Network;
+MimeType=x-scheme-handler/jagex;
+Keywords=jagex;runescape;osrs;launcher;
+StartupNotify=true

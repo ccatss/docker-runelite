@@ -1,21 +1,25 @@
-<?xml id="menu" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
-    <menu id="root-menu" label="Openbox Root Menu">
-        <item label="Launch RuneLite">
+    <menu id="root-menu" label="MENU">
+        <item label="RuneLite" icon="/opt/runelite/icon.png">
             <action name="Execute">
                 <command>java -jar /opt/runelite/RuneLite.jar --mode=OFF</command>
             </action>
         </item>
-
-        <separator />
-
-        <item label="Open Terminal Shell">
+        <item label="GoAT Launcher" icon="/opt/goat-launcher/icon.png">
             <action name="Execute">
-                <command>st</command>
+                <command>/opt/goat-launcher/goat-launcher --runelite=/opt/runelite/RuneLite.jar</command>
             </action>
         </item>
-        <item label="Exit/Restart Session">
-            <action name="Exit" />
+        <item label="FireFox" icon="/usr/share/icons/hicolor/48x48/apps/firefox.png">
+            <action name="Execute">
+                <command>/usr/bin/firefox</command>
+            </action>
+        </item>
+        <item label="Terminal" icon="/usr/share/pixmaps/xterm-color_48x48.xpm">
+            <action name="Execute">
+                <command>/usr/bin/xterm</command>
+            </action>
         </item>
     </menu>
 </openbox_menu>

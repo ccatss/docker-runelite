@@ -1,3 +1,8 @@
 #!/bin/bash
 
+if [ ! -z "$USE_JAGEX_LAUNCHER" ]; then
+  exec /opt/goat-launcher/goat-launcher --store file --runelite-path=/opt/runelite/RuneLite.jar
+  exit $?
+fi
+
 exec java -jar /opt/runelite/RuneLite.jar --mode=OFF
