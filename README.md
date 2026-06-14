@@ -1,10 +1,10 @@
 # Docker RuneLite (Selkies WebRTC)
 
-A lightweight, Alpine-based Docker container that runs the **RuneLite** client for Old School RuneScape (OSRS). It utilizes the **Selkies** WebRTC platform to stream the application directly to your web browser. Play OSRS anywhere, on your phone, at work, and resume playing on any system.
+An Ubuntu-based Docker container that runs the **RuneLite** client for Old School RuneScape (OSRS). It utilizes the **Selkies** WebRTC platform to stream the application directly to your web browser. Play OSRS anywhere, on your phone, at work, and resume playing on any system.
 
-Also great for AFK training, as you can connect to it only when needed, instead of keeping a computer online for it.
+Great for AFK training, as you can connect to it only when needed, instead of keeping a computer online for it.
 
-This project is built on top of `linuxserver/docker-baseimage-selkies` (Alpine variant)
+This project is built on top of `linuxserver/docker-baseimage-selkies` (Ubuntu Resolute variant)
 
 ## Features
 
